@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="AS.CSS">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <span class="error" id="nameError"></span>
+
+            <label for="dateOfJoining">Date of Joining:</label>
+            <input type="text" id="dateOfJoining" name="dateOfJoining" placeholder="YYYY-MM-DD">
+            <span class="error" id="dateError"></span>
+
+            <label for="email">Email ID:</label>
+            <input type="text" id="email" name="email">
+            <span class="error" id="emailError"></span>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone">
+            <span class="error" id="phoneError"></span>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address"></textarea>
+            <span class="error" id="addressError"></span>
+
+            <label for="pinCode">Pin Code:</label>
+            <input type="text" id="pinCode" name="pinCode">
+            <span class="error" id="pinCodeError"></span>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                <option value="">Select State</option>
+                <option value="State1">State 1</option>
+                <option value="State2">State 2</option>
+                <option value="State3">State 3</option>
+            </select>
+
+            <button type="button" onclick="validateForm()">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+    <script src="AS.JS"></script>
+</body>
+</html>
